@@ -1,0 +1,285 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header{
+  width: 100%;/*横幅90%*/
+  height: 70px;
+  font-size: 16px;
+  color: #FAFAFA;
+  background-color: #EC715F;
+}
+
+header img{
+  height: 70px;
+}
+
+.nav-list{
+  width: 1024px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.nav-list-item{
+  list-style: none;
+  display: inline-block;
+  margin: 0 30px;
+}
+
+.nav-list-item:first-child{
+  margin-right: auto;
+}
+
+.main-visual{
+  width: 100%; /*横幅いっぱい*/
+  height: 650px; /*高さ300px*/
+  background-image: url(img/mv.png);
+  background-size: cover;  /*縦横比を維持したまま背景領域を埋め尽くす*/
+  background-position: center;  /*背景画像を中央配置*/
+}
+
+.main-visual-content{
+  text-align: center;  /*テキストの位置を中央配置*/
+  padding-top: 200px;  /*テキスト上部に105pxの内側余白*/
+  color: #FAFAFA;
+}
+
+.main-visual-name{
+  margin-bottom: 10px;  /*上側の外側余白の指定*/
+  font-size: 64px;
+}
+
+.main-visual-text{
+  font-size: 20px;
+}
+
+main{
+  padding: 90px;
+  background-color: #ECEFF1;
+}
+
+.portforio{
+  width: 920px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.portforio-heading{
+  font-size: 32px;
+  color: #000000;
+}
+
+.line{
+  border: 3px solid #EC715F;
+  width: 70px;
+  margin: 8px auto 0;
+}
+
+.portforio-text{
+  margin: 30px;
+  font-size: 16px;
+  color: #000000;
+}
+
+.portforio-images{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.portforio-image{
+  width: 300px;
+  height: 250px;
+  margin: 0 10px 10px 0;
+  background-size: cover;
+  background-position: center;
+}
+
+.portforio-image:nth-child(1){
+  background-image: url(img/sketch.jpg);
+}
+
+.portforio-image:nth-child(2){
+  background-image: url(img/websuku.png);
+}
+
+.portforio-image:nth-child(3){
+  background-image: url(img/write.jpg);
+  margin-right: 0;
+}
+
+.portforio-image:nth-child(4){
+  background-image: url(img/webcamp.png);
+  margin-bottom: 0;
+}
+
+.portforio-image:nth-child(5){
+  background-image: url(img/talk.jpg);
+  margin-bottom: 0;
+}
+
+.portforio-image:nth-child(6){
+  background-image: url(img/webcamp-mother.png);
+  margin: 0;
+}
+
+main2, main4{
+  color: #000000;
+}
+
+.feature{
+  width: 980px;
+  text-align: center;
+  margin: 90px auto;
+}
+
+.feature-heading{
+  font-size: 32px;
+}
+
+.feature-text{
+  margin: 30px;
+  font-size: 16px;
+}
+
+.feature-content{
+  display: flex;
+  justify-content: center;
+}
+
+.feature-content-item{
+  width: 320px;
+  margin-right: 10px;
+}
+
+.feature-content-item:last-child{
+  margin: 0;
+}
+
+.feature-content-item-icon{
+  font-size: 60px;
+}
+
+.feature-content-item-heading{
+  font-size: 20px;
+  margin: 10px;
+}
+
+.feature-content-item-text{
+  font-size: 16px;
+}
+
+.container{
+  background-color: #ECEFF1;
+  color: #000000;
+  padding: 90px;
+}
+
+.profile{
+  width: 1024px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.profile-heading, .contact-heading{
+  font-size: 32px;
+}
+
+.profile-text, .contact-text{
+  font-size: 16px;
+  margin: 30px;
+}
+
+.profile-detail{
+  display: flex;
+  justify-content: center;
+}
+
+.profile-image-box{
+  width: 512px;
+}
+
+.profile-image{
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+}
+
+.profile-detail-box{
+  width: 512px;
+}
+
+.profile-detail-heading{
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.profile-detail-text{
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.profile-detail-text:last-child{
+  margin: 0;
+}
+
+.contact{
+  width: 800px;
+  margin: 90px auto;
+  text-align: center;
+}
+
+.contact-detail{
+  display: flex;
+  justify-content: center;
+}
+
+.contact-detail-box{
+  width: 400px;
+}
+
+.contact-detail-heading{
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.contact-detail-text{
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.contact-detail-text:last-child{
+  margin-bottom: 0;
+}
+
+.contact-detail-box:last-child{
+  display: block;
+}
+
+.contact-detail-icon{
+  font-size: 50px;
+  margin-right: 20px;
+  display: inline-block
+}
+
+.contact-detail-icon:last-child{
+  margin-right: 0;
+}
+
+footer{
+  background-color: #EC715F;
+  width: 100%;
+  height: 60px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-text{
+  font-size: 16px;
+  color: #FAFAFA;
+}
