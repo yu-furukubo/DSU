@@ -6,7 +6,6 @@
 
 header{
   width: 100%;/*横幅90%*/
-  height: 70px;
   font-size: 16px;
   color: #FAFAFA;
   background-color: #EC715F;
@@ -16,9 +15,20 @@ header img{
   height: 70px;
 }
 
-.nav-list{
+.header-box{
   width: 1024px;
+  height: 70px;
   margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo{
+  margin-right: auto;
+}
+
+.nav-list{
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -28,10 +38,6 @@ header img{
   list-style: none;
   display: inline-block;
   margin: 0 30px;
-}
-
-.nav-list-item:first-child{
-  margin-right: auto;
 }
 
 .main-visual{
@@ -57,8 +63,8 @@ header img{
   font-size: 20px;
 }
 
-main{
-  padding: 90px;
+.main{
+  padding: 90px 0;
   background-color: #ECEFF1;
 }
 
@@ -127,14 +133,15 @@ main{
   margin: 0;
 }
 
-main2, main4{
+.main2, .main4{
   color: #000000;
 }
 
 .feature{
   width: 980px;
   text-align: center;
-  margin: 90px auto;
+  padding: 90px 0;
+  margin: 0 auto;
 }
 
 .feature-heading{
@@ -176,7 +183,7 @@ main2, main4{
 .container{
   background-color: #ECEFF1;
   color: #000000;
-  padding: 90px;
+  padding: 90px 0;
 }
 
 .profile{
@@ -191,7 +198,7 @@ main2, main4{
 
 .profile-text, .contact-text{
   font-size: 16px;
-  margin: 30px;
+  margin: 30px 0;
 }
 
 .profile-detail{
@@ -282,4 +289,191 @@ footer{
 .footer-text{
   font-size: 16px;
   color: #FAFAFA;
+}
+
+@media screen and (min-width:768px){
+  .hamburger-menu{
+    display: none;
+  }
+}
+
+@media screen and (max-width:767px){
+  .header-box, .nav-list, .portforio, .feature, .profile, .contact, .footer{
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .nav-list{
+    display: none;
+  }
+
+  .menu-btn {
+    display: flex;
+    height: 50px;
+    width: 50px;
+    justify-content: center;
+    align-items: center;
+    z-index: 90;
+    color: #ffffff;
+  }
+  .menu-btn span,
+  .menu-btn span:before,
+  .menu-btn span:after {
+      content: '';
+      display: block;
+      height: 3px;
+      width: 25px;
+      border-radius: 3px;
+      background-color: #ffffff;
+      position: absolute;
+  }
+  .menu-btn span:before {
+      bottom: 8px;
+  }
+  .menu-btn span:after {
+      top: 8px;
+  }
+
+  #menu-btn-check {
+    display: none;
+  }
+
+  header img{
+    height: 50px;
+  }
+
+  .header-box{
+    height: 50px;
+  }
+
+  .main-visual{
+    background-image: url(img/code.png);
+  }
+
+  .main-visual-content{
+    width: 90%;
+    margin: 0 auto
+  }
+
+  .main-visual-name{
+    margin-bottom: 10px;  /*上側の外側余白の指定*/
+    font-size: 40px;
+  }
+
+  .main-visual-text{
+    font-size: 18px;
+  }
+
+  .main{
+    padding: 90px 0;
+  }
+
+  .portforio-text{
+    margin: 30px;
+    font-size: 16px;
+    color: #000000;
+  }
+
+  .portforio-images{
+    display: block;
+    justify-content: center;
+    }
+
+  .portforio-image{
+    margin: 0 auto 10px;
+  }
+
+  .portforio-image:nth-child(1){
+    background-image: url(img/websuku.png);
+  }
+
+  .portforio-image:nth-child(2){
+    background-image: url(img/webcamp.png);
+  }
+
+  .portforio-image:nth-child(3){
+    background-image: url(img/webcamp-mother.png);
+    margin: 0 auto;
+  }
+
+  .portforio-image:nth-child(4),:nth-child(5),:nth-child(6){
+    display: none;
+  }
+
+  .feature{
+    padding: 90px 0;
+  }
+
+  .feature-content{
+    display: block;
+    justify-content: center;
+  }
+
+  .feature-content-item{
+    margin: 0 auto;
+  }
+
+  .feature-content-item:last-child{
+    margin: 0 auto;
+  }
+
+  .feature-content-item-text{
+    margin: 10px 0;
+  }
+
+  .container{
+    padding: 90px 0;
+  }
+
+  .profile-detail{
+    display: block;
+    justify-content: center;
+  }
+
+  .profile-image-box{
+    width: 100%;
+  }
+
+  .profile-image{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+
+  .profile-detail-box{
+    width: 100%;
+  }
+
+  .contact{
+    margin: 0 auto;
+    padding: 90px 0;
+    text-align: center;
+  }
+
+  .contact-detail{
+    display: block;
+    justify-content: center;
+  }
+
+  .contact-detail-box{
+    width: 100%;
+  }
+
+  .contact-detail-text:last-child{
+    margin-bottom: 20px;
+  }
+
+  .contact-detail-box:last-child{
+    display: block;
+  }
+
+  .contact-detail-icon{
+    margin-right: 8px;
+  }
+
+  .contact-detail-icon:last-child{
+    margin-right: 0;
+  }
+
 }
